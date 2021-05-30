@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FormCurric</title>
+</head>
+<body>
+    <div class="container">
+        <menu>
+          <h1>Curriculo</h1>
+        </menu>
+        <div>
+            <form action="form.php" method="POST" enctype="multipart/form-data">
+               
+                <label for="nome">Digite seu nome</label>
+                <input type="text" name="nome" id="nome" size="21" required><br>
+
+                <label for="idade">Digite sua data de nascimento</label>
+                <input type="date" name="idade" size="21" required><br>
+
+                <label for="email">Digite seu email</label>
+                <input type="email" name="email" id="" size="21" required><br>
+
+                <label for="tell">digite seu telefone</label>
+                <input type="number" name="tell" id="" size="21" required><br>
+
+                <label for="endereco">digite seu endereço</label>
+                <input type="text" name="endereco" size="30" required><br>
+
+                <label for="cidade">Digite sua cidade</label>
+                <input type="text" name="cidade" id="" required><br>
+
+                <label for="estado">Digite seu estado</label>
+                <input type="text" name="estado" id="" required><br>
+
+                <label for="profissao">Digite sua profissão</label>
+                <input type="text" name="profissao" required><br><br>
+                
+             
+             
+
+                <hr style="border: 1px dashed black;" /><br>
+
+        
+                <label for="experiencias">Quais as suas experiencias</label><br>
+                <textarea name="experiencias" id="" cols="70" rows="5"></textarea><br>
+
+                <label for="referencias">Quais as suas referencias</label><br>
+                <textarea name="referencias" id="" cols="70" rows="5"></textarea><br>
+
+                <label for="objetivos">Quais os seus objetivos</label><br>
+                <textarea name="objetivos" id="" cols="70" rows="5"></textarea><br>
+         
+                
+                 <br><br><hr style="border: 1px dashed black;" /><br>
+
+           
+                <label for="estadocivil">Estado civil</label><br>
+                <input type="radio" name="estadocivil" id="xt" value="SOLTEIRO" checked>solteiro <br>
+                <input type="radio" name="estadocivil" id="xt" value="CASADO">casado <br><br>
+                <label for="filho">Você tem filhos</label><br>
+                <input type="radio" name="filho" id="xt" value="sim" >SIM <br>
+                <input type="radio" name="filho" id="xt" value="nao" checked>NÃO<br><br>
+
+                <label for="escolaridade">Escolaridade</label><br>
+                <input type="checkbox" name="escolaridade" id="xt" value="Ensino Fundamental">Ensino Fundamental<br>                    
+                <input type="checkbox" name="escolaridade" id="xt" value="Ensino Medio">Ensino Médio<br>
+                <input type="checkbox" name="escolaridade" id="xt" value="Ensino Superior">Ensino Superior<br>
+                <input type="checkbox" name="escolaridade" id="xt" value="Mestrado">Mestrado<br><br>
+             
+
+                <hr style="border: 1px dashed black;" /><br>
+        
+         
+                <label for="foto">Adicione uma fotografia sua</label><br>                    
+                <input type="file" name="foto" id="" value="foto" style="margin-left: 20vh;"><br>
+                <br><br>
+                     
+                <button type="submit" id="b1">Enviar</button>
+                
+            </form>
+            
+            
+            <br><br>
+        </div>
+        
+    </div>
+    <br><br><br>
+   
+</body>
+</html>

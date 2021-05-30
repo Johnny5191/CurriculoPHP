@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+
+  }
+  body{
+    background-image: url("img/paris.jpg");
+    background-position: center;  
+  }
+  .container {
+  
+    width: 100vh;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 8px  #6c1396;
+   border-left-color: #B721FF;
+   border-top-color: #B721FF;
+
+    /* animation: spin 1s linear infinite; */
+  }
+    menu {
+  
+        background-color: #21D4FD;
+background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+  }
+div {
+    
+    margin-left:auto ;
+    margin-right: auto;
+    grid-area: div;
+    background-color: white;
+    /* margin-left:auto ;
+    margin-right:auto; */ 
+ 
+  }
+.image{
+    width: 300px;
+    height: auto;
+    padding-left: 2vh;
+    
+}
+
+#b1{
+    width: 120px;
+    height: 70px;
+    background-color;background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);;
+    color: white;
+    font-family: cursive;
+    font-size: 20pt;
+    border-radius: 5%;
+    cursor: pointer;
+    
+}
+
+
+
