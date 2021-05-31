@@ -23,30 +23,49 @@
   
         background-color: #21D4FD;
 background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-
+    width: 100%;
 
     height: 10vh;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10vh;
+    
   }
 div {
     
-    margin-left:auto ;
-    margin-right: auto;
-    grid-area: div;
+    
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
     background-color: white;
-    /* margin-left:auto ;
-    margin-right:auto; */ 
+    width: 100vh;
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-left: solid 8px  #B721FF;
+    border-right: solid 8px  #6c1396;
+    border-bottom: solid 8px  #6c1396;
+
+
  
   }
 .image{
-    width: 300px;
-    height: auto;
-    padding-left: 2vh;
+    width: 250px;
+    height: 250px;
+   margin-left:10vh ;
+   border-radius: 50%;
+    border:  solid 8px  #6c1396;
+    border-left-color: #B721FF;
+   border-top-color: #B721FF;
     
+    
+}
+lh{
+    margin: 5vh;
+}
+rh{
+    margin: 5vh;
 }
 
 #b1{

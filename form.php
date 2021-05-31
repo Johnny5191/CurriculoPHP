@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="php.css">
-    <script src="https://kit.fontawesome.com/24cb2eafe1.js" crossorigin="anonymous"></script>
-    <title>Document</title>
-</head>
+
 <?php
      ini_set('default_charset', 'utf-8');
      if($_POST){
@@ -16,7 +7,7 @@
      $profissao = $_POST['profissao'];
      $idade = $_POST['idade']; 
      $endereco = $_POST['endereco'];
-     $telefone = $_POST['tell']; 
+     $tell = $_POST['tell']; 
      $cidade = $_POST['cidade'];
      $estado = $_POST['estado'];
      $estadocivil = $_POST['estadocivil'];
@@ -65,28 +56,51 @@ function calcularIdade($date){
                 $a = "$nome.html";
             $arquivo = fopen($a, 'a+');
 
-                $html = '<!DOCTYPE html>';
+                $html = '<!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link rel="stylesheet" href="php.css">
+                    <script src="https://kit.fontawesome.com/24cb2eafe1.js" crossorigin="anonymous"></script>
+                    <title>Document</title>
+                </head>
+                <body>
+                     <div class="container">
+                        <menu><h1>Curriculo</h1></menu>    
+                    </div>
+                        <div>
+                            <br><br>
+                            <lh>
+                                <!--<img src="img/'.$dir.$new_name.'" class="image">-->
+                                <img src="img/gg.jpg" class="image">
+                            </lh>
+                            
+                            
+                            <rh>
+                                <h3>Nome: '.$nome.'</h3>
+                                <h3>Idade: '.calcularIdade($date).'</h3>
+                                <h3>Email: '.$email.'</h3>
+                                <h3>Telefone: '.$tell.'</h3>
+                                <h3>Endereço: '.$endereco.'</h3>
+                                <h3>Cidade: '.$cidade.'</h3>
+                                <h3>Estado: '.$estado.'</h3>
+                                <h3>Profissão:'.$profissao.'</h3>
+                                
+                            </rh>
+                            <br>
+                            <hr style="border: 1px dashed black;" /><br>
+                            <br>
+                        </div>
+                    
+                </body>
+                </html>';
             fwrite($arquivo,$html);
 
                 //fechar o arquivo
                 fclose($arquivo);
+
+                echo $html;
     }
 ?>
-
-<body>
-     <div class="container">
-        <menu><h1>Curriculo</h1></menu>    
-
-        <div>
-            
-            <!-- <img src="img/'.$dir.$new_name.'" class="image"> -->
-            <img src="img/paris.jpg" class="image">
-            
-            <div class="infpessoais">
-                <h1>'.mb_strtoupper($nome).'</h1>
-                
-            </div>
-        </div>
-    </div>
-</body>
-</html>
