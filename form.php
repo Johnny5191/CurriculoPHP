@@ -23,7 +23,7 @@
       // calcular idade da pessoa
 
 function calcularIdade($date){
-    $date = date('Y-m-d', strtotime(str_replace("/", "-", $idade)));
+    $date = date('Y-m-d', strtotime(str_replace("/", "-", $date)));
             $time = strtotime($date);
 
             if($time === false){
@@ -93,13 +93,24 @@ function calcularIdade($date){
                                 <h3>Cidade: '.$cidade.'</h3>
                                 <h3>Estado: '.$estado.'</h3>
                                 <h3>Profissão:'.$profissao.'</h3>       
-                            </rh>       
-                        </div></div>
+                            </rh>   
+                            <br><br>    
+                        </div>
+                    
                         <div class="cc">
-                                <h4>Experiências Profisionais:<br>'.$experiencias.'</h4><br><br>
-                                <h4>Experiências Referências:<br>'.$referencias.'</h4><br><br>
-                                <h4>Experiências Objetivos:<br>'.$objetivos.'</h4><br><br>
+                            <br><br>
+                            <hr style="border: 1px dashed black;" /><br>
+                            <br>
+                                    <h4>Experiências Profisionais:<br>'.$experiencias.'</h4><br><br>
+                                    <h4>Experiências Referências:<br>'.$referencias.'</h4><br><br>
+                                    <h4>Experiências Objetivos:<br>'.$objetivos.'</h4><br><br>
 
+                            <br><hr style="border: 1px dashed black;" /><br> 
+
+                            <h3 class="alternativas">Estado civil:'.$estadocivil.'</h3><br>
+                            <h3 class="alternativas">Possui Filhos:'.$filho.'</h3><br>
+                            <h3 class="alternativas">Escolaridade:'.$escolaridade.'</h3><br><br>
+                            <a href="'.$a.'" id="b1" download>Download</a><br><br>
                         </div>
                         
                     
