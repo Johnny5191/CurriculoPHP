@@ -3,9 +3,11 @@
      ini_set('default_charset', 'utf-8');
      if($_POST){
      $nome = $_POST['nome'];
+     $rg = $_POST['rg'];
+     $cpf = $_POST['cpf'];
      $email = $_POST['email'];
      $profissao = $_POST['profissao'];
-     $idade = $_POST['idade']; 
+     $date = $_POST['idade']; 
      $endereco = $_POST['endereco'];
      $tell = $_POST['tell']; 
      $cidade = $_POST['cidade'];
@@ -13,6 +15,8 @@
      $estadocivil = $_POST['estadocivil'];
      $filho = $_POST['filho'];
      $experiencias = $_POST['experiencias'];
+     $objetivos = $_POST['objetivos'];
+     $referencias = $_POST['referencias'];
      $escolaridade = $_POST['escolaridade'];
      $arquivo = $_FILES['foto']['name'];
 
@@ -67,11 +71,11 @@ function calcularIdade($date){
                     <title>Document</title>
                 </head>
                 <body>
-                     <div class="container">
-                        <menu><h1>Curriculo</h1></menu>    
-                    </div>
-                        <div>
-                            <br><br>
+                       <div class="container">
+                            <menu><h1>Curriculo</h1></menu>    
+                        </div>
+                        <div class="div">
+                            <br>
                             <lh>
                                 <!--<img src="img/'.$dir.$new_name.'" class="image">-->
                                 <img src="img/gg.jpg" class="image">
@@ -80,19 +84,24 @@ function calcularIdade($date){
                             
                             <rh>
                                 <h3>Nome: '.$nome.'</h3>
+                                <h3>RG: '.$rg.'</h3>
+                                <h3>CPF: '.$cpf.'</h3>
                                 <h3>Idade: '.calcularIdade($date).'</h3>
                                 <h3>Email: '.$email.'</h3>
                                 <h3>Telefone: '.$tell.'</h3>
                                 <h3>Endereço: '.$endereco.'</h3>
                                 <h3>Cidade: '.$cidade.'</h3>
                                 <h3>Estado: '.$estado.'</h3>
-                                <h3>Profissão:'.$profissao.'</h3>
-                                
-                            </rh>
-                            <br>
-                            <hr style="border: 1px dashed black;" /><br>
-                            <br>
+                                <h3>Profissão:'.$profissao.'</h3>       
+                            </rh>       
+                        </div></div>
+                        <div class="cc">
+                                <h4>Experiências Profisionais:<br>'.$experiencias.'</h4><br><br>
+                                <h4>Experiências Referências:<br>'.$referencias.'</h4><br><br>
+                                <h4>Experiências Objetivos:<br>'.$objetivos.'</h4><br><br>
+
                         </div>
+                        
                     
                 </body>
                 </html>';

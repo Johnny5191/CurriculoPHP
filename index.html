@@ -5,67 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>FormCurric</title>
+    <title>PHP-Currículo</title>
 </head>
 <body>
     <div class="container">
         <menu>
-          <h1>Curriculo</h1>
+          <h1>Currículo</h1>
         </menu>
+
         <div>
+           <h2 class="dadospessoais">Dados Pessoais</h2>
             <form action="form.php" method="POST" enctype="multipart/form-data">
-               
-                <label for="nome">Digite seu nome</label>
+                <br>
+                <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome" size="21" required><br>
-
-                <label for="idade">Digite sua data de nascimento</label>
+                <br>
+                <label for="rg">RG:</label>
+                <input type="text" name="rg" size="21" required><br>
+                <br>
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" size="21" required><br>
+                <br>
+                <label for="idade">Data Nascimento:</label>
                 <input type="date" name="idade" size="21" required><br>
-
-                <label for="email">Digite seu email</label>
+                <br>
+                <label for="email">Email:</label>
                 <input type="email" name="email" id="" size="21" required><br>
-
-                <label for="tell">digite seu telefone</label>
+                <br>
+                <label for="tell">Telefone:</label>
                 <input type="number" name="tell" id="" size="21" required><br>
-
-                <label for="endereco">digite seu endereço</label>
+                <br>
+                <label for="endereco">Endereço:</label>
                 <input type="text" name="endereco" size="30" required><br>
-
-                <label for="cidade">Digite sua cidade</label>
+                <br>
+                <label for="cidade">Cidade:</label>
                 <input type="text" name="cidade" id="" required><br>
-
-                <label for="estado">Digite seu estado</label>
+                <br>
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" id="" required><br>
+                <br>
+                <label for="estado">Estado:</label>
                 <input type="text" name="estado" id="" required><br>
-
-                <label for="profissao">Digite sua profissão</label>
+                <br>
+                <label for="profissao">Profissão:</label>
                 <input type="text" name="profissao" required><br><br>
                 
              
              
-
+                <br>
                 <hr style="border: 1px dashed black;" /><br>
 
         
-                <label for="experiencias">Quais as suas experiencias</label><br>
+                <label for="experiencias">Experiência Profissional:</label><br>
                 <textarea name="experiencias" id="" cols="70" rows="5"></textarea><br>
 
-                <label for="referencias">Quais as suas referencias</label><br>
+                <label for="referencias">Referências:</label><br>
                 <textarea name="referencias" id="" cols="70" rows="5"></textarea><br>
 
-                <label for="objetivos">Quais os seus objetivos</label><br>
+                <label for="objetivos">Quais os seus objetivos?</label><br>
                 <textarea name="objetivos" id="" cols="70" rows="5"></textarea><br>
          
                 
                  <br><br><hr style="border: 1px dashed black;" /><br>
 
            
-                <label for="estadocivil">Estado civil</label><br>
+                <label for="estadocivil">Estado civil:</label><br>
                 <input type="radio" name="estadocivil" id="xt" value="SOLTEIRO" checked>solteiro <br>
                 <input type="radio" name="estadocivil" id="xt" value="CASADO">casado <br><br>
-                <label for="filho">Você tem filhos</label><br>
-                <input type="radio" name="filho" id="xt" value="sim" >SIM <br>
-                <input type="radio" name="filho" id="xt" value="nao" checked>NÃO<br><br>
+                <label for="filho">Você tem filhos?</label><br>
+                <input type="radio" name="filho" id="xt" value="sim" >Sim <br>
+                <input type="radio" name="filho" id="xt" value="nao" checked>Não<br><br>
 
-                <label for="escolaridade">Escolaridade</label><br>
+                <label for="escolaridade">Escolaridade:</label><br>
                 <input type="checkbox" name="escolaridade" id="xt" value="Ensino Fundamental">Ensino Fundamental<br>                    
                 <input type="checkbox" name="escolaridade" id="xt" value="Ensino Medio">Ensino Médio<br>
                 <input type="checkbox" name="escolaridade" id="xt" value="Ensino Superior">Ensino Superior<br>
