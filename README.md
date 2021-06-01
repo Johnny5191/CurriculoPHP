@@ -1,6 +1,6 @@
 # GERADOR DE CURRÍCULOS
 
-[PHP-CURRICULOS](http://joaogm.profrodolfo.com.br/PHP-CURRICULO/)
+[LINK DO SITE PHP-CURRICULOS](http://joaogm.profrodolfo.com.br/PHP-CURRICULO/)
 
 ## DISPLAY GRANDE
 ![](img/pc1.png)
@@ -13,6 +13,6 @@
 
 ## DISPLAY MOBILE
 
-![](img/s1.png)
+![](img/s1.jpeg)
 
-![](img/s2.png)
+![](img/s2.jpeg)
